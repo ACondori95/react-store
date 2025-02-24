@@ -1,7 +1,7 @@
+import {ShoppingBagIcon} from "@heroicons/react/16/solid";
 import {useContext} from "react";
 import {NavLink} from "react-router-dom";
 import {ShoppingCartContext} from "../../Context";
-import {ShoppingBagIcon} from "@heroicons/react/24/solid";
 
 const Navbar = () => {
   const context = useContext(ShoppingCartContext);

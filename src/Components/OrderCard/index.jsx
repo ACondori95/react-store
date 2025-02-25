@@ -4,9 +4,11 @@ const OrderCard = (props) => {
   const {id, title, imageUrl, price, handleDelete} = props;
   let renderXMarkIcon;
   if (handleDelete) {
-    <XMarkIcon
-      onClick={() => handleDelete(id)}
-      className='size-6 text-black cursor-pointer'></XMarkIcon>;
+    renderXMarkIcon = (
+      <XMarkIcon
+        onClick={() => handleDelete(id)}
+        className='h-6 w-6 text-black cursor-pointer'></XMarkIcon>
+    );
   }
 
   return (

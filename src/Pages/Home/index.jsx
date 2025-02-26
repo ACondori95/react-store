@@ -1,23 +1,19 @@
 import {useContext} from "react";
+import {ShoppingCartContext} from "../../Context";
 import Card from "../../Components/Card";
 import Layout from "../../Components/Layout";
 import ProductDetail from "../../Components/ProductDetail";
-import {ShoppingCartContext} from "../../Context";
 
 function Home() {
   const context = useContext(ShoppingCartContext);
 
   const renderView = () => {
-    if (context.searchByTitle?.length > 0) {
-      if (context.filteredItems?.length > 0) {
-        return context.filteredItems?.map((item) => (
-          <Card key={item.id} data={item} />
-        ));
-      } else {
-        return <div>We don't have anything :(</div>;
-      }
+    if (context.filteredItems?.length > 0) {
+      return context.filteredItems?.map((item) => (
+        <Card key={item.id} data={item} />
+      ));
     } else {
-      return context.items?.map((item) => <Card key={item.id} data={item} />);
+      return <div>We don't have anything :(</div>;
     }
   };
 

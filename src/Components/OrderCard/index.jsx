@@ -7,7 +7,7 @@ const OrderCard = (props) => {
     renderXMarkIcon = (
       <XMarkIcon
         onClick={() => handleDelete(id)}
-        className='h-6 w-6 text-black cursor-pointer'></XMarkIcon>
+        className='size-6 text-black cursor-pointer'></XMarkIcon>
     );
   }
 

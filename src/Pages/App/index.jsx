@@ -3,10 +3,10 @@ import Home from "../Home";
 import MyAccount from "../MyAccount";
 import MyOrder from "../MyOrder";
 import MyOrders from "../MyOrders";
-import SignIn from "../SignIn";
 import NotFound from "../NotFound";
-import {ShoppingCartProvider} from "../../Context";
+import SignIn from "../SignIn";
 import Navbar from "../../Components/Navbar";
+import {ShoppingCartProvider} from "../../Context";
 import CheckoutSideMenu from "../../Components/CheckoutSideMenu";
 import "./App.css";
 

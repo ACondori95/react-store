@@ -1,9 +1,9 @@
-import {useContext} from "react";
-import {Link} from "react-router-dom";
 import {XMarkIcon} from "@heroicons/react/24/solid";
+import {useContext} from "react";
 import {ShoppingCartContext} from "../../Context";
 import OrderCard from "../OrderCard";
 import {totalPrice} from "../../utils";
+import {Link} from "react-router-dom";
 import "./styles.css";
 
 const CheckoutSideMenu = () => {
